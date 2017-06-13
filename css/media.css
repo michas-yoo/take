@@ -1,0 +1,13 @@
+@media (max-width: 700px) {
+  header {
+    padding: 5%;
+    background-position: center; }
+  main {
+    padding: 0; }
+    main .start {
+      padding: 0 5%; }
+      main .start h2 {
+        width: 100vh;
+        text-align: center; }
+      main .start .iphone {
+        display: none; } }

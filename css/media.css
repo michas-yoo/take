@@ -2,12 +2,90 @@
   header {
     padding: 5%;
     background-position: center; }
+
   main {
     padding: 0; }
     main .start {
+      width: 100%;
       padding: 0 5%; }
       main .start h2 {
         width: 100vh;
-        text-align: center; }
-      main .start .iphone {
-        display: none; } }
+        text-align: center;
+        font-size: 2em; }
+      main .start .pimg .desc {
+        width: 95%; }
+      main .start .pimg .iphone {
+        display: none; }
+      main .start .txt {
+        width: 95%; }
+        main .start .txt .third {
+          margin-bottom: 0; }
+      main .start .grid {
+        width: 100%;
+        margin-top: 20px; }
+        main .start .grid .item {
+          flex-basis: 81%;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 15px;
+          border-radius: 5px;
+          box-shadow: 0 2px 10px -3px gray; }
+          main .start .grid .item:last-child {
+            margin-bottom: 0;
+            background-position: 0 25%; }
+          main .start .grid .item h2 {
+            width: 100%; }
+    main .look {
+      width: 90%;
+      padding: 5%; }
+      main .look h2 {
+        text-align: center;
+        margin: 20px 0 50px; }
+      main .look .txtGrid {
+        flex-wrap: wrap; }
+        main .look .txtGrid .titem {
+          flex-basis: 45%;
+          margin-bottom: 10px; }
+          main .look .txtGrid .titem h4 {
+            margin: 0;
+            text-align: center; }
+    main .more {
+      padding: 5%;
+      justify-content: center;
+      background-size: 160% 100%; }
+      main .more .moreContent {
+        width: 50%;
+        text-shadow: 0 0 5px black; }
+    main .reasons {
+      padding: 5%; }
+      main .reasons .txtGrid {
+        flex-wrap: wrap; }
+        main .reasons .txtGrid h4 {
+          margin-top: 0;
+          margin-left: 0;
+          text-align: center; }
+        main .reasons .txtGrid .titem {
+          flex-basis: 48%; }
+          main .reasons .txtGrid .titem:last-child {
+            flex-grow: 1;
+            margin-top: 10px; }
+    main .sell {
+      padding: 5%;
+      width: 90%; }
+
+  footer {
+    padding: 5%; }
+    footer .fGrid .second .inp input {
+      font-size: 1.6em; }
+    footer .fGrid .second label {
+      width: 100%;
+      font-size: 0.8em; }
+    footer .fGrid .fitem:last-child {
+      flex-grow: 1;
+      margin-left: 50px; }
+      footer .fGrid .fitem:last-child .list {
+        margin-right: 20px; }
+        footer .fGrid .fitem:last-child .list:last-child {
+          margin-right: 0; } }
+
+/*# sourceMappingURL=media.css.map */

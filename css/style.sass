@@ -1,0 +1,335 @@
+$st_padding: 50px 200px
+$pcol: gray
+$greenCol: #84ce9c
+$purp: #bd8cbd
+
+*
+	transition: all .3s ease-in-out
+
+html, body
+	height: 100vh
+	width: 100vw
+	margin: 0
+	overflow-x: hidden
+	font-family: 'Quicksand', sans-serif
+
+a
+	color: white
+	font-weight: bold
+	text-decoration: none
+	position: relative
+
+	&:after
+		content: '->'
+		position: absolute
+		top: 0
+		right: -25px
+
+.full
+		height: 100vh
+		width: 100vw
+		background:
+			size: cover
+			repeat: no-repeat
+			attachment: fixed
+
+.txtGrid
+			width: 100%
+			display: flex
+			align-items: flex-start
+			justify-content: space-between
+
+//			HEADER ZONE
+header
+	padding: $st_padding
+	background:
+		image: url('../img/main-bg.png')
+
+	.content
+		height: 375px
+		width: 400px
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: space-between
+		color: white
+
+		.logo
+			display: flex
+			align-items: center
+			justify-content: flex-start
+
+			.take
+				margin-left: 10px
+				font:
+					size: 1.2em
+					weight: bold
+					style: italic
+
+		#pp
+			font-size: 3em
+
+// 			MAIN ZONE
+main
+	height: auto
+	width: 100%
+
+	.start
+		height: auto
+		width: calc(100% - 390px)
+		padding: $st_padding
+
+		h2
+			font-size: 1.7em
+
+		.pimg
+			position: relative
+
+			.desc
+				width: 46%
+				color: $pcol
+
+			.iphone
+				height: 650px
+				width: 500px
+				position: absolute
+				bottom: 0
+				right: 15px
+
+		.txt
+			height: 250px
+			width: 100%
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+
+			p
+				width: 46%
+				text-align: justify
+				color: $pcol
+
+		.grid
+			width: 150%
+			display: flex
+			flex-wrap: wrap
+
+			.item
+				height: 190px
+				width: 245px
+				padding: 5px 30px
+				overflow: hidden
+				color: white
+				cursor: pointer
+
+			.dq
+				background: #f79c9c
+
+			.btl
+				background: #635a7b
+
+			.oc
+				background:
+					image: url('../img/dawn.png')
+					size: cover
+
+			.htsg
+				background: $purp
+
+			.spsw
+				width: 550px
+				background:
+					image: url('../img/wtf-guy.png')
+					size: cover
+
+			.pp
+				background: $greenCol
+
+			.ssn
+				width: 260px
+				background:
+					image: url('../img/girl.png')
+					size: cover
+
+	.look
+		padding: $st_padding
+		margin-bottom: 75px
+
+		h2
+			font-size: 1.7em
+		
+		.txtGrid
+			.titem
+				width: 23%
+				text-align: justify
+
+				h4
+					margin-left: 5px
+
+				p
+					color: $pcol
+
+	.more
+		padding: $st_padding
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		background:
+			image: url('../img/car-interior.png')
+			size: 150% 150%
+			position: center
+		
+		.moreContent
+			height: 300px
+			width: 40%
+			margin-bottom: 5%
+			color: white
+			
+			h1
+				font-size: 3em
+	
+	.reasons
+		padding: $st_padding
+		background: $greenCol
+		color: white
+
+		h2
+			font-size: 2em
+		
+		.txtGrid 
+			h4
+				margin-left: 5px
+
+			.titem
+				width: 31%
+				text-align: justify
+
+	.sell
+		height: 80vh
+		width: calc(100% - 400px)
+		padding: $st_padding
+		background: #f7f7ff
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		.sitem
+			height: auto
+			width: 45%
+			padding: 5px 30px 30px
+			text-align: justify
+		
+		.type
+			height: auto
+			width: auto
+			display: inline-block
+			padding: 5px 10px
+			margin-bottom: 0
+			border-radius: 5px
+			color: white
+			font:
+				weight: bold
+				size: 0.8em
+			text-transform: uppercase
+
+		.typeL
+			background-color: #ddd
+			
+		.typeM
+			background-color: #bd8cbd
+
+		.legacy
+			width: 40%
+
+			p
+				color: $pcol
+
+		.mPopular
+			background: white
+			box-shadow: 0 0 50px #ccc
+			border-radius: 3px
+
+			p
+				color: $pcol
+
+		.but
+			display: block
+			padding: 15px 20px
+			margin-bottom: 15px
+			background-color: $greenCol
+			color: white
+			text-transform: uppercase
+			font-weight: bold
+			cursor: pointer
+			border: none
+			border-radius: 5px
+			outline: none
+
+		.lLogo
+			margin-right: 10px
+
+// 		FOOTER ZONE
+footer
+	padding: $st_padding
+	background-color: #182131
+	color: white
+
+	.fGrid
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+		.fitem
+			flex-basis: 47%
+
+		.second
+			.inp
+				display: flex
+
+				input
+					width: 85%
+					font-size: 2.5em
+					border: none
+					outline: none
+
+				.square
+					height: 50px
+					width: 15%
+					position: relative
+					background-color: $greenCol
+				
+					&:after
+						content: ''
+						height: 10px
+						width: 25px
+						position: absolute
+						top: calc(50% - 9px)
+						left: calc(50% - 12.5px)
+						border-left: 1px solid white
+						border-bottom: 1px solid white
+						transform: rotate(-45deg)
+
+			label
+				width: 70%
+				display: inline-block
+				margin-top: 15px
+				font-size: 0.7em
+				color: $pcol
+
+		.last
+			display: flex
+			flex-direction: row
+			align-items: center
+			justify-content: center
+
+			ul 
+				padding-left: 0
+				margin-right: 20px
+
+			li
+				list-style: none
+
+	#copy
+		width: 100%
+		display: inline-block
+		margin: 30px 0 0 0
+		text-align: center

@@ -1,0 +1,356 @@
+* {
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Quicksand', sans-serif; }
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative; }
+  a:after {
+    content: '->';
+    position: absolute;
+    top: 0;
+    right: -25px; }
+
+.full {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.txtGrid {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+header {
+  padding: 50px 200px;
+  background-image: url("../img/main-bg.png"); }
+  header .content {
+    height: 375px;
+    width: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: white; }
+    header .content .logo {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      header .content .logo .take {
+        margin-left: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+        font-style: italic; }
+    header .content #pp {
+      font-size: 3em; }
+
+main {
+  height: auto;
+  width: 100%; }
+  main .start {
+    height: auto;
+    width: calc(100% - 390px);
+    padding: 50px 200px; }
+    main .start h2 {
+      font-size: 1.7em; }
+    main .start .pimg {
+      position: relative; }
+      main .start .pimg .desc {
+        width: 46%;
+        color: gray; }
+      main .start .pimg .iphone {
+        height: 650px;
+        width: 500px;
+        position: absolute;
+        bottom: 0;
+        right: 15px; }
+    main .start .txt {
+      height: 250px;
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      main .start .txt p {
+        width: 46%;
+        text-align: justify;
+        color: gray; }
+    main .start .grid {
+      width: 150%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      main .start .grid .item {
+        height: 190px;
+        width: 245px;
+        padding: 5px 30px;
+        overflow: hidden;
+        color: white;
+        cursor: pointer; }
+      main .start .grid .dq {
+        background: #f79c9c; }
+      main .start .grid .btl {
+        background: #635a7b; }
+      main .start .grid .oc {
+        background-image: url("../img/dawn.png");
+        background-size: cover; }
+      main .start .grid .htsg {
+        background: #bd8cbd; }
+      main .start .grid .spsw {
+        width: 550px;
+        background-image: url("../img/wtf-guy.png");
+        background-size: cover; }
+      main .start .grid .pp {
+        background: #84ce9c; }
+      main .start .grid .ssn {
+        width: 260px;
+        background-image: url("../img/girl.png");
+        background-size: cover; }
+  main .look {
+    padding: 50px 200px;
+    margin-bottom: 75px; }
+    main .look h2 {
+      font-size: 1.7em; }
+    main .look .txtGrid .titem {
+      width: 23%;
+      text-align: justify; }
+      main .look .txtGrid .titem h4 {
+        margin-left: 5px; }
+      main .look .txtGrid .titem p {
+        color: gray; }
+  main .more {
+    padding: 50px 200px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background-image: url("../img/car-interior.png");
+    background-size: 150% 150%;
+    background-position: center; }
+    main .more .moreContent {
+      height: 300px;
+      width: 40%;
+      margin-bottom: 5%;
+      color: white; }
+      main .more .moreContent h1 {
+        font-size: 3em; }
+  main .reasons {
+    padding: 50px 200px;
+    background: #84ce9c;
+    color: white; }
+    main .reasons h2 {
+      font-size: 2em; }
+    main .reasons .txtGrid h4 {
+      margin-left: 5px; }
+    main .reasons .txtGrid .titem {
+      width: 31%;
+      text-align: justify; }
+  main .sell {
+    height: 80vh;
+    width: calc(100% - 400px);
+    padding: 50px 200px;
+    background: #f7f7ff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    main .sell .sitem {
+      height: auto;
+      width: 45%;
+      padding: 5px 30px 30px;
+      text-align: justify; }
+    main .sell .type {
+      height: auto;
+      width: auto;
+      display: inline-block;
+      padding: 5px 10px;
+      margin-bottom: 0;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.8em;
+      text-transform: uppercase; }
+    main .sell .typeL {
+      background-color: #ddd; }
+    main .sell .typeM {
+      background-color: #bd8cbd; }
+    main .sell .legacy {
+      width: 40%; }
+      main .sell .legacy p {
+        color: gray; }
+    main .sell .mPopular {
+      background: white;
+      -webkit-box-shadow: 0 0 50px #ccc;
+      box-shadow: 0 0 50px #ccc;
+      border-radius: 3px; }
+      main .sell .mPopular p {
+        color: gray; }
+    main .sell .but {
+      display: block;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      background-color: #84ce9c;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      outline: none; }
+    main .sell .lLogo {
+      margin-right: 10px; }
+
+footer {
+  padding: 50px 200px;
+  background-color: #182131;
+  color: white; }
+  footer .fGrid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    footer .fGrid .fitem {
+      -webkit-flex-basis: 47%;
+      -ms-flex-preferred-size: 47%;
+      flex-basis: 47%; }
+    footer .fGrid .second .inp {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      footer .fGrid .second .inp input {
+        width: 85%;
+        font-size: 2.5em;
+        border: none;
+        outline: none; }
+      footer .fGrid .second .inp .square {
+        height: 50px;
+        width: 15%;
+        position: relative;
+        background-color: #84ce9c; }
+        footer .fGrid .second .inp .square:after {
+          content: '';
+          height: 10px;
+          width: 25px;
+          position: absolute;
+          top: calc(50% - 9px);
+          left: calc(50% - 12.5px);
+          border-left: 1px solid white;
+          border-bottom: 1px solid white;
+          -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+    footer .fGrid .second label {
+      width: 70%;
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 0.7em;
+      color: gray; }
+    footer .fGrid .last {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      footer .fGrid .last ul {
+        padding-left: 0;
+        margin-right: 20px; }
+      footer .fGrid .last li {
+        list-style: none; }
+  footer #copy {
+    width: 100%;
+    display: inline-block;
+    margin: 30px 0 0 0;
+    text-align: center; }

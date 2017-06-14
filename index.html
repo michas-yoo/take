@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="cache-control" content="max-age=604800"/>
 	<title>Take</title>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
@@ -24,7 +25,7 @@
 		<section class="start">
 			<h2>Start something new</h2>
 			<div class="pimg">
-				<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi labore doloremque sapiente iusto, natus odit temporibus voluptas. Corporis esse autem, atque.</p>
+				<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi labore doloremque sapiente iusto, natus temporibus voluptas. Corporis esse autem, atque.</p>
 				<img src="img/iphone.png" alt="iphone" class="iphone">
 			</div>
 			<div class="txt">
@@ -184,5 +185,8 @@
 		</div>
 		<span id="copy">&copy;2017 Michas</span>
 	</footer>
+	<script async defer>
+		if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').then(function() { console.log("Service Worker Registered"); });}
+	</script>
 </body>
 </html>

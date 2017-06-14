@@ -26,18 +26,18 @@ a
 		right: -25px
 
 .full
-		height: 100vh
-		width: 100vw
-		background:
-			size: cover
-			repeat: no-repeat
-			attachment: fixed
+	height: 100vh
+	width: 100vw
+	background:
+		size: cover
+		repeat: no-repeat
+		attachment: fixed
 
 .txtGrid
-			width: 100%
-			display: flex
-			align-items: flex-start
-			justify-content: space-between
+	width: 100%
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
 
 //			HEADER ZONE
 header
@@ -200,7 +200,7 @@ main
 				margin-left: 5px
 
 			.titem
-				width: 31%
+				flex-basis: 31%
 				text-align: justify
 
 	.sell
@@ -211,10 +211,11 @@ main
 		display: flex
 		align-items: center
 		justify-content: space-between
+		flex-wrap: no-wrap
 
 		.sitem
 			height: auto
-			width: 45%
+			flex-basis: 40%
 			padding: 5px 30px 30px
 			text-align: justify
 		

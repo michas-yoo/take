@@ -210,7 +210,9 @@ main {
     main .reasons .txtGrid h4 {
       margin-left: 5px; }
     main .reasons .txtGrid .titem {
-      width: 31%;
+      -webkit-flex-basis: 31%;
+      -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
       text-align: justify; }
   main .sell {
     height: 80vh;
@@ -228,10 +230,15 @@ main {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -webkit-flex-wrap: no-wrap;
+    -ms-flex-wrap: no-wrap;
+    flex-wrap: no-wrap; }
     main .sell .sitem {
       height: auto;
-      width: 45%;
+      -webkit-flex-basis: 40%;
+      -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
       padding: 5px 30px 30px;
       text-align: justify; }
     main .sell .type {
@@ -358,7 +365,7 @@ footer {
     margin: 30px 0 0 0;
     text-align: center; }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   header {
     padding: 5%;
     background-position: center; }
@@ -386,6 +393,10 @@ footer {
           -webkit-flex-basis: 81%;
           -ms-flex-preferred-size: 81%;
           flex-basis: 81%;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
           -webkit-box-pack: center;
           -webkit-justify-content: center;
           -ms-flex-pack: center;
@@ -467,3 +478,74 @@ footer {
         margin-right: 20px; }
         footer .fGrid .fitem:last-child .list:last-child {
           margin-right: 0; } }
+
+@media (max-width: 425px) {
+  header {
+    padding: 5%;
+    background-position: center; }
+    header .headerGroup {
+      width: 50%;
+      text-shadow: 0 0 5px gray; }
+  main .start {
+    width: 100%; }
+    main .start .pimg .desc {
+      width: 90%;
+      text-align: justify;
+      font-style: italic; }
+    main .start h2 {
+      width: 90%;
+      padding: 0; }
+    main .start .txt {
+      height: auto;
+      width: 90%; }
+      main .start .txt p {
+        width: 100%;
+        margin-bottom: 0; }
+    main .start .grid {
+      width: 100%; }
+      main .start .grid .item {
+        height: auto;
+        width: 95%;
+        padding: 5%; }
+        main .start .grid .item h2 {
+          margin-top: 0; }
+  main .look {
+    margin-bottom: 0; }
+    main .look .txtGrid .titem {
+      -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+  main .more {
+    background-size: 300% 100%; }
+    main .more .moreContent {
+      width: 75%; }
+  main .reasons h2 {
+    text-align: center; }
+  main .reasons .txtGrid h4 {
+    margin-left: 0; }
+  main .reasons .txtGrid .titem {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+  main .sell {
+    height: auto;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    main .sell .sitem {
+      -webkit-flex-basis: 90%;
+      -ms-flex-preferred-size: 90%;
+      flex-basis: 90%; }
+      main .sell .sitem .but {
+        display: inline-block;
+        margin-right: 25px; }
+    main .sell .mPopular {
+      margin-bottom: 25px; }
+  footer .fGrid .fitem {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    footer .fGrid .fitem:last-child {
+      margin-left: 0; }
+  footer #copy {
+    margin: 15px 0; } }

@@ -6,4 +6,4 @@ This is a sample website, you can find mockup in the *img* folder: [Take.psd](ht
 - SASS
 - JavaScript
 
-You can [preview it here](https://michas-yoo.github.io).
+## You can [preview it here](https://michas-yoo.github.io/take).

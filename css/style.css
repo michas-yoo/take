@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
@@ -16,7 +17,7 @@ a {
   text-decoration: none;
   position: relative; }
   a:after {
-    content: '->';
+    content: '→';
     position: absolute;
     top: 0;
     right: -25px; }
@@ -144,24 +145,41 @@ main {
         color: white;
         cursor: pointer; }
       main .start .grid .dq {
-        background: #f79c9c; }
+        background-color: #f79c9c; }
+        main .start .grid .dq:hover {
+          background-color: #f36d6d; }
       main .start .grid .btl {
-        background: #635a7b; }
+        background-color: #635a7b; }
+        main .start .grid .btl:hover {
+          background-color: #4b445e; }
       main .start .grid .oc {
         background-image: url("../img/dawn.png");
         background-size: cover; }
+        main .start .grid .oc:hover {
+          -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
       main .start .grid .htsg {
-        background: #bd8cbd; }
+        background-color: #bd8cbd; }
+        main .start .grid .htsg:hover {
+          background-color: #aa6caa; }
       main .start .grid .spsw {
         width: 550px;
         background-image: url("../img/wtf-guy.png");
         background-size: cover; }
+        main .start .grid .spsw:hover {
+          -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
       main .start .grid .pp {
-        background: #84ce9c; }
+        background-color: #84ce9c; }
+        main .start .grid .pp:hover {
+          background-color: #60bf7f; }
       main .start .grid .ssn {
         width: 260px;
         background-image: url("../img/girl.png");
         background-size: cover; }
+        main .start .grid .ssn:hover {
+          -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
   main .look {
     padding: 50px 200px;
     margin-bottom: 75px; }
@@ -271,7 +289,7 @@ main {
       display: block;
       padding: 15px 20px;
       margin-bottom: 15px;
-      background-color: #84ce9c;
+      background-color: #4db870;
       color: white;
       text-transform: uppercase;
       font-weight: bold;
@@ -279,6 +297,8 @@ main {
       border: none;
       border-radius: 5px;
       outline: none; }
+      main .sell .but:hover {
+        background-color: #72c78d; }
     main .sell .lLogo {
       margin-right: 10px; }
 
@@ -316,8 +336,10 @@ footer {
         height: 50px;
         width: 15%;
         position: relative;
-        background-color: #84ce9c;
+        background-color: #4db870;
         cursor: pointer; }
+        footer .fGrid .second .inp .square:hover {
+          background-color: #60bf7f; }
         footer .fGrid .second .inp .square:after {
           content: '';
           height: 10px;
@@ -434,7 +456,7 @@ footer {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
-      background-size: 160% 100%; }
+      background-size: 200% 100%; }
       main .more .moreContent {
         width: 50%;
         text-shadow: 0 0 5px black; }

@@ -20,7 +20,7 @@ a
 	position: relative
 
 	&:after
-		content: '->'
+		content: '→'
 		position: absolute
 		top: 0
 		right: -25px
@@ -122,33 +122,47 @@ main
 				cursor: pointer
 
 			.dq
-				background: #f79c9c
+				background-color: #f79c9c
+				&:hover
+					background-color: darken(#f79c9c, 10%)
 
 			.btl
-				background: #635a7b
+				background-color: #635a7b
+				&:hover
+					background-color: darken(#635a7b, 10%)
 
 			.oc
 				background:
 					image: url('../img/dawn.png')
 					size: cover
-
+				&:hover
+					box-shadow: 0 0 15px rgba(0,0,0,.5)
+				
 			.htsg
-				background: $purp
+				background-color: $purp
+				&:hover
+					background-color: darken($purp, 10%)
 
 			.spsw
 				width: 550px
 				background:
 					image: url('../img/wtf-guy.png')
 					size: cover
+				&:hover
+					box-shadow: 0 0 15px rgba(0,0,0,.5)
 
 			.pp
-				background: $greenCol
+				background-color: $greenCol
+				&:hover
+					background-color: darken($greenCol, 10%)
 
 			.ssn
 				width: 260px
 				background:
 					image: url('../img/girl.png')
 					size: cover
+				&:hover
+					box-shadow: 0 0 15px rgba(0,0,0,.5)
 
 	.look
 		padding: $st_padding
@@ -256,7 +270,7 @@ main
 			display: block
 			padding: 15px 20px
 			margin-bottom: 15px
-			background-color: $greenCol
+			background-color: darken($greenCol, 15%)
 			color: white
 			text-transform: uppercase
 			font-weight: bold
@@ -264,6 +278,9 @@ main
 			border: none
 			border-radius: 5px
 			outline: none
+
+			&:hover
+				background-color: lighten(darken($greenCol, 15%), 10%)
 
 		.lLogo
 			margin-right: 10px
@@ -296,8 +313,11 @@ footer
 					height: 50px
 					width: 15%
 					position: relative
-					background-color: $greenCol
+					background-color: darken($greenCol, 15%)
 					cursor: pointer
+
+					&:hover
+						background-color: lighten(darken($greenCol, 15%), 5%)
 				
 					&:after
 						content: ''
